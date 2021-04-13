@@ -7,7 +7,7 @@ module.exports = (app) => {
     }
 
     const findQuestionsForQuiz = (req, res) => {
-        const quizId = req.params.qzid;
+        const quizId = req.params.qid;
         const questions = questionService.findQuestionsForQuiz(quizId);
         res.send(questions);
     }
