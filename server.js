@@ -11,9 +11,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-const demos = require('./controllers/demo-controller');
-demos(app);
-
 require("./controllers/quizzes-controller")(app)
 require("./controllers/question-controller")(app)
 
