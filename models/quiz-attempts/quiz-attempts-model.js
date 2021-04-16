@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const quizAttemptSchema = require('./quiz-attempts-schema')
-const quizAttemptModel = mongoose.model(
-   'QuizAttemptModel',
-   quizAttemptSchema
+const quizAttemptsSchema = require('./quiz-attempts-schema')
+const quizAttemptsModel = mongoose.model(
+   'QuizAttemptsModel',
+   quizAttemptsSchema
 )
-module.exports = quizAttemptModel
+module.exports = quizAttemptsModel
